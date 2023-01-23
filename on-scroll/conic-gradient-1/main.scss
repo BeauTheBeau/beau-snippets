@@ -1,0 +1,24 @@
+/*
+  This is SCSS! https://sass-lang.com/
+  View compiled CSS at main.css.
+*/
+
+:root {
+  --rotation: 5deg; /* This variable is changed in main.js, as the user scrolls */
+}
+
+body {
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: conic-gradient(from var(--rotate) at 67% 256px, rgba(255, 0, 204, 1) 0%, rgba(183, 93, 100, 1) 50%, rgba(127, 20, 127, 1) 77%);
+
+    /* I usually like to add a 16px blur */
+    filter: blur(16px);
+  }
+}
