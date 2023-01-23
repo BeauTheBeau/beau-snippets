@@ -1,5 +1,6 @@
-# False Social Snippets
-This repo is for code snippets from False Social.
+# Beau Snippets
+This repo is for cool CSS things.
 
 ## Index
-* [Layout Switcher](https://github.com/BeauTheBeau/false-social-snippets/tree/main/layout-switcher)
+* [Layout Switcher](https://github.com/BeauTheBeau/beau-snippets/tree/main/layout-switcher)
+* [Conic Gradient Scroll Effect](https://github.com/BeauTheBeau/beau-snippets/tree/main/on-scroll/conic-gradient-1)
