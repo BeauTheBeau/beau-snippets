@@ -1,0 +1,29 @@
+/*
+  This is SCSS! https://sass-lang.com/
+  View compiled CSS at layout-switcher.css.
+*/
+:root {
+	--rotation: 5deg;
+	/* Used in lines 5 - 7 of layout-switcher.js, but commented out by default */
+	--gradient-perc-1: 0%;
+	--gradient-perc-2: 50%;
+	--gradient-perc-3: 77%;
+}
+
+body {
+	min-height: 200vh;
+}
+
+body::before {
+	background: conic-gradient(from var(--rotation) at 67% 256px, rgb(255, 0, 204) var(--gradient-perc-1), rgb(183, 93, 100) var(--gradient-perc-2), rgb(127, 20, 127) var(--gradient-perc-3));
+	content: "";
+	filter: blur(16px);
+	height: 120%;
+	left: -10%;
+	position: fixed;
+	top: -10%;
+	width: 120%;
+	z-index: -1;
+}
+
+/*# sourceMappingURL=conic-gradient.css.map */
