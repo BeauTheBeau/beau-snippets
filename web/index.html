@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Beau Snippets</title>
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<main>
+	<h1>Beau Snippets</h1>
+	<p>Beau Snippets is a collection of cool code by Beau. A great place to see cool things</p>
+	<a href="https://github.com/BeauTheBeau/beau-snippets">View source on GitHub</a>
+
+	<hr>
+
+	<h2>Code Snippets</h2>
+	<div class="chip-row">
+		<div class="chip active" id="list" onclick="layout('list')">List View</div>
+		<div class="chip" id="grid" onclick="layout('grid')">Grid View</div>
+
+
+		<!--
+			<div class="right">
+				<div class="chip active" id="sortJS" onclick="sortBy('JavaScript')">JavaScript</div>
+				<div class="chip active" id="sortCSS" onclick="sortBy('css')">CSS</div>
+			</div>
+		-->
+
+	</div>
+
+
+	<br>
+
+	<div class="view list" id="container">
+		<div class="card">
+			<h2>Layout Switcher</h2>
+
+			<p>
+				A JavaScript function that switches between grid and list view. It uses the classList property to add
+				and remove classes, and CSS flexbox to display the cards in a grid or list.
+			</p>
+
+			<div class="chip-row">
+				<div class="chip">JavaScript</div>
+				<div class="chip">CSS</div>
+			</div>
+			<br>
+
+			<div class="chip-row">
+				<a href="https://github.com/BeauTheBeau/beau-snippets/tree/main/layout-switcher">
+					<div class="chip">Get the Code</div>
+				</a>
+				<a href="../layout-switcher/ls-demo.html">
+					<div class="chip">View Demo</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Spinning gradient on scroll</h2>
+
+			<p>
+				Spins a conic gradient on scroll. Uses the scrollY property to get the scroll position and does some
+				mathematical gibberish to get the gradient to spin.
+			</p>
+
+			<div class="chip-row">
+				<div class="chip">JavaScript</div>
+				<div class="chip">CSS</div>
+			</div>
+			<br>
+
+			<div class="chip-row">
+				<a href="https://github.com/BeauTheBeau/beau-snippets/tree/main/on-scroll/conic-gradient-1">
+					<div class="chip">Get the Code</div>
+				</a>
+				<a href="../on-scroll/conic-gradient-1/main.html">
+					<div class="chip">View Demo</div>
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+</main>
+
+<script src="main.js"></script>
+<script src="../on-scroll/conic-gradient-1/main.js"></script>
+
+</body>
+</html>
