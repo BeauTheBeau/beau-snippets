@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Switcher | Demo</title>
+	<link href="main.css" rel="stylesheet">
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.child {
+			background: #eee;
+			padding: 1rem;
+			border: 1px solid #ccc;
+		}
+
+		.container {
+			min-width: 555px;
+			width: 512px;
+			height: 512px;
+			resize: both;
+			overflow: auto;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<h1>On Scroll / Conic Gradient 1</h1>
+<p>Spins a conic gradient on scroll. Uses the scrollY property to get the scroll position and does some
+	mathematical gibberish to get the gradient to spin.</p>
+
+<button onclick="layout('list')">List</button>
+<button onclick="layout('grid')">Grid</button>
+
+<div class="container grid" id="container">
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+	<div class="child">
+		<h2>hello</h2>
+		<p>this is child</p>
+	</div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
