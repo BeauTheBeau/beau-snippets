@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Layout Switcher | Demo</title>
-	<link href="main.css" rel="stylesheet">
+	<link href="layout-switcher.css" rel="stylesheet">
+	<link href="/web/css/common.css" rel="stylesheet">
+
 
 	<style>
 
@@ -18,21 +20,32 @@
 		}
 
 		.container {
+			border-radius: 1em;
 			min-width: 555px;
 			width: 512px;
 			height: 512px;
 			resize: both;
 			overflow: auto;
+			color: black;
 		}
 
 	</style>
 
 </head>
 <body>
+<div class="head">
+	<h1>On Scroll / Conic Gradient 1</h1>
+	<p>Spins a conic gradient on scroll. Uses the scrollY property to get the scroll position and does some
+		mathematical gibberish to get the gradient to spin.</p>
 
-<h1>On Scroll / Conic Gradient 1</h1>
-<p>Spins a conic gradient on scroll. Uses the scrollY property to get the scroll position and does some
-	mathematical gibberish to get the gradient to spin.</p>
+	<a href="../index.html">
+		<button>Home</button>
+	</a>
+
+	<a href="https://github.com/BeauTheBeau/beau-snippets/tree/main/layout-switcher">
+		<button>View on GitHub</button>
+	</a>
+</div>
 
 <button onclick="layout('list')">List</button>
 <button onclick="layout('grid')">Grid</button>
@@ -100,7 +113,7 @@
 
 </div>
 
-<script src="main.js"></script>
+<script src="layout-switcher.js"></script>
 
 </body>
 </html>
