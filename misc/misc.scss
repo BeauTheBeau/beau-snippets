@@ -20,6 +20,10 @@ pre {
   white-space: pre-wrap;
 }
 
+.head:not(.nosticky) {
+  z-index: 9999;
+}
+
 .nosticky {
   background-color: transparent;
   position: relative !important;
