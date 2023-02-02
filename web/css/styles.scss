@@ -21,9 +21,9 @@ h1::after {
   background: #c9ff05;
   content: "";
   display: inline-block;
-  height: 2px;
-  transform: translateX(-20px);
-  width: 20px;
+  height: 100%;
+  transform: translateX(-30%);
+  width: 2px;
 }
 
 a {

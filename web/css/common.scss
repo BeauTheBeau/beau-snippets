@@ -4,7 +4,7 @@
 }
 
 .head {
-  backdrop-filter: blur(16px) brightness(75%);
+  background-color: #000000;
   border-bottom: 1px solid #c9ff05;
   margin-bottom: 1em;
   padding: 1em;
@@ -18,6 +18,7 @@ body {
   background-color: black;
   color: white;
   margin: 0;
+  min-height: 250vh;
 }
 
 button {

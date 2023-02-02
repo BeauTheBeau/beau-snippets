@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Misc. Demos</title>
+	<link href="../web/css/common.css" rel="stylesheet">
+	<link href="misc.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="posIndicator__bar" id="posIndicator__bar">
+</div>
+
+<div class="item" data-item="Gradient Text">
+
+	<div class="head nosticky">
+		<h1>Misc / Gradient Text</h1>
+		<p>Make your text stand out with a gradient. This is done by using the background-clip CSS property.</p>
+	</div>
+
+	<h2 class="gradient-text">Gradient Text - woah, so cool and fancy!</h2>
+
+	<pre data-lang="css">.gradient-text {
+  background: -webkit-linear-gradient(0, #c9ff05, #7a7aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}</pre>
+</div>
+
+<div class="item" data-item="Random String Generator">
+
+	<div class="head nosticky">
+		<h1>Misc / Random String Generator</h1>
+		<p>Generate a random string of characters.</p>
+	</div>
+
+	<div class="random-string-generator">
+		<button class="btn" id="generate">Generate</button>
+		<input id="random-string" placeholder="output" readonly type="text">
+		<input class="slider" id="random-string-length" max="64" min="1" type="range" value="12">
+	</div>
+
+	<pre data-lang="js">function generateRandomString(length) {
+	const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	let result = '';
+	for (let i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+	return result;
+}
+
+document.getElementById('generate').addEventListener('click', function () {
+	document.getElementById('random-string').value = generateRandomString(document.getElementById('random-string-length').value);
+});</pre>
+
+</div>
+
+<script>
+	function generateRandomString(length) {
+		const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		let result = '';
+		for (let i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+		return result;
+	}
+
+	document.getElementById('generate').addEventListener('click', function () {
+		document.getElementById('random-string').value =
+			generateRandomString(document.getElementById('random-string-length').value);
+	});
+</script>
+
+
+<!--
+	br spam cus ye
+-->
+
+
+<br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br>
+
+<script src="../web/syntax-highlighter.js"></script>
+<script src="../web/category.js"></script>
+
+
+</body>
+</html>

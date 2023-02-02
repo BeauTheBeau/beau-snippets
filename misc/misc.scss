@@ -1,0 +1,75 @@
+.gradient-text {
+  background: -webkit-linear-gradient(0, #c9ff05, #0000b7);
+  -webkit-background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+}
+
+.code-img {
+  border-radius: 1em;
+  margin-left: 1em;
+  max-width: 768px;
+}
+
+pre {
+  background-color: #1f1f1f;
+  border-left: 4px solid #c9ff05;
+  color: white !important;
+  margin-left: 1em;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+.nosticky {
+  background-color: transparent;
+  position: relative !important;
+}
+
+.item {
+  border: 1px solid #131313;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+  transition: all 0.2s ease-in-out;
+
+  &.active {
+	background-color: #131313;
+  }
+}
+
+
+.posIndicator__bar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(201, 255, 5, 0.61);
+  bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 3em;
+  max-height: 3em;
+
+  min-width: 100%;
+  overflow-x: scroll;
+
+  overflow-y: hidden;
+  position: fixed;
+  width: auto;
+  z-index: 999;
+}
+
+a.posIndicator {
+  background-color: rgba(0, 0, 0, 0.28);
+  border-radius: 1em;
+  color: white;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin: 0.5em;
+  min-width: 5em;
+  padding: 0.5em;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &.active {
+	background-color: #ffe900;
+	color: black;
+  }
+}
