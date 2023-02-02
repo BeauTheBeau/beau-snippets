@@ -153,4 +153,36 @@ main {
 	filter: brightness(1);
 }
 
+.profile {
+	background-color: #333;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.2em;
+	margin: 1em 0;
+	padding: 1em;
+	transition: 0.2s ease-in-out;
+}
+
+.profile:hover {
+	background-color: #3442d2;
+}
+
+.profile .profile-pic {
+	border-radius: 1em;
+	height: 128px;
+	margin-right: 1em;
+	width: 128px;
+}
+
+.profile .profile-text {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.profile .profile-text > * {
+  margin: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

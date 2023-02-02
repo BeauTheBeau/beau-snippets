@@ -166,3 +166,35 @@ main {
 }
 
 
+.profile {
+  background-color: #333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin: 1em 0;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+	background-color: #3442d2;
+  }
+
+  .profile-pic {
+	border-radius: 1em;
+	height: 128px;
+	margin-right: 1em;
+	width: 128px;
+  }
+
+  .profile-text {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+
+	& > * {
+	  margin: 0;
+	}
+  }
+}
