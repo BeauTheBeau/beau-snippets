@@ -33,10 +33,10 @@ a {
 
 @keyframes cursor-blink {
   0% {
-	opacity: 0;
+    opacity: 0;
   }
   100% {
-	opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -52,25 +52,25 @@ body {
   min-height: 250vh;
 
   &::before {
-	background: conic-gradient(from var(--rotation) at 67% 256px,
-			rgba(255, 0, 204, 1) var(--gradient-perc-1),
-			rgba(183, 93, 100, 1) var(--gradient-perc-2),
-			rgba(127, 20, 127, 1) var(--gradient-perc-3));
-	content: '';
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
+    background: conic-gradient(from var(--rotation) at 67% 256px,
+            rgba(255, 0, 204, 1) var(--gradient-perc-1),
+            rgba(183, 93, 100, 1) var(--gradient-perc-2),
+            rgba(127, 20, 127, 1) var(--gradient-perc-3));
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-	/* I usually like to add a 16px blur */
-	z-index: -1;
+    /* I usually like to add a 16px blur */
+    z-index: -1;
   }
 
 }
 
 main {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.76);
   border: 2px solid #333;
   border-radius: 5px;
   margin: auto;
@@ -87,9 +87,9 @@ main {
   width: 100%;
 
   .right {
-	display: inherit;
-	gap: 0.2em;
-	margin-left: auto;
+    display: inherit;
+    gap: 0.2em;
+    margin-left: auto;
   }
 
 }
@@ -108,60 +108,63 @@ main {
   user-select: none;
 
   &.active {
-	background-color: #3442d2;
+    background-color: #3442d2;
   }
 
   &:hover {
-	background-color: #3442d2;
+    background-color: #3442d2;
   }
 }
 
 
 .view {
   display: flex;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+  border-radius: 1em;
+  overflow: hidden;
 
   transition: 0.2s ease-in-out;
 
   &.list {
-	flex-direction: column;
-	flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-	& > :first-child {
-	  border-radius: 1em 1em 0 0;
-	}
+    & > :first-child {
+      border-radius: 1em 1em 0 0;
+    }
 
-	& > :last-child {
-	  border-radius: 0 0 1em 1em;
-	}
+    & > :last-child {
+      border-radius: 0 0 1em 1em;
+    }
 
-	& > *:not(:first-child):not(:last-child) {
-	  border: 1px solid rgba(255, 255, 255, 0.04);
-	  border-radius: 0;
-	}
+    & > *:not(:first-child):not(:last-child) {
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 0;
+    }
   }
 
   &.grid {
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 0.2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2em;
 
-	.card {
-	  flex: 1;
-	  min-width: 356px;
-	}
+    .card {
+      flex: 1;
+      min-width: 356px;
+    }
 
   }
 
   .card {
-	background-color: #333;
-	filter: brightness(0.8);
-	padding: 1em;
-	transition: 0.2s ease-in-out;
+    background-color: #333;
+    filter: brightness(0.8);
+    padding: 1em;
+    transition: 0.2s ease-in-out;
 
-	&:hover {
-	  filter: brightness(1);
-	}
+    &:hover {
+      filter: brightness(1);
+    }
   }
 }
 
@@ -178,23 +181,23 @@ main {
   transition: 0.2s ease-in-out;
 
   &:hover {
-	background-color: #3442d2;
+    background-color: #3442d2;
   }
 
   .profile-pic {
-	border-radius: 1em;
-	height: 128px;
-	margin-right: 1em;
-	width: 128px;
+    border-radius: 1em;
+    height: 128px;
+    margin-right: 1em;
+    width: 128px;
   }
 
   .profile-text {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 
-	& > * {
-	  margin: 0;
-	}
+    & > * {
+      margin: 0;
+    }
   }
 }

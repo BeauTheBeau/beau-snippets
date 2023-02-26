@@ -1,46 +1,48 @@
 * {
-	box-sizing: border-box;
-	font-family: "consolas", "courier new", monospace;
+    box-sizing: border-box;
+    font-family: "consolas", "courier new", monospace;
 }
 
 .head {
-	background-color: #000000;
-	border-bottom: 1px solid #c9ff05;
-	margin-bottom: 1em;
-	padding: 1em;
-	position: sticky;
-	top: 0;
-	width: 100%;
-	z-index: 1;
+    background-color: #000000;
+    border-bottom: 1px solid #c9ff05;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
 }
 
 body {
-	background-color: black;
-	color: white;
-	margin: 0;
-	min-height: 250vh;
+    background-color: black;
+    color: white;
+    margin: 0;
+    min-height: 250vh;
 }
 
 button {
-	background-color: #c9ff05;
-	border: none;
-	border-radius: 4px;
-	color: black;
-	cursor: pointer;
-	filter: brightness(0.8);
-	font-size: 16px;
-	font-weight: bold;
-	margin: 8px;
-	padding: 8px 16px;
-	transition: filter 0.2s;
+    background-color: #c9ff05;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    filter: brightness(0.8);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px;
+    padding: 8px 16px;
+    transition: filter 0.2s;
 }
+
 button:hover {
-	filter: brightness(1);
+    filter: brightness(1);
 }
 
 a button {
-	background-color: #7a7aff;
-	color: white;
+    background-color: #7a7aff;
+    color: white;
 }
 
 /*# sourceMappingURL=common.css.map */

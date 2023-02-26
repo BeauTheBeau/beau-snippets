@@ -1,13 +1,13 @@
 :root {
-	--rotation: 5deg;
-	--gradient-perc-1: 0%;
-	--gradient-perc-2: 50%;
-	--gradient-perc-3: 77%;
+  --rotation: 5deg;
+  --gradient-perc-1: 0%;
+  --gradient-perc-2: 50%;
+  --gradient-perc-3: 77%;
 }
 
 * {
-	box-sizing: border-box;
-	font-family: "consolas", "courier new", monospace;
+  box-sizing: border-box;
+  font-family: "consolas", "courier new", monospace;
 }
 
 /*
@@ -16,170 +16,156 @@
   ==============================
 */
 h1::after {
-	animation: cursor-blink 1s steps(2) infinite;
-	background: #c9ff05;
-	content: "";
-	display: inline-block;
-	height: 100%;
-	transform: translateX(-30%);
-	width: 2px;
+  animation: cursor-blink 1s steps(2) infinite;
+  background: #c9ff05;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  transform: translateX(-30%);
+  width: 2px;
 }
 
 a {
-	color: #c9ff05;
-	text-decoration: underline;
+  color: #c9ff05;
+  text-decoration: underline;
 }
 
 @keyframes cursor-blink {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 /* ==============================
   Layout
   ==============================
 */
 body {
-	color: white;
-	font-size: 16px;
-	line-height: 1.5;
-	min-height: 250vh;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 250vh;
 }
-
 body::before {
-	background: conic-gradient(from var(--rotation) at 67% 256px, rgb(255, 0, 204) var(--gradient-perc-1), rgb(183, 93, 100) var(--gradient-perc-2), rgb(127, 20, 127) var(--gradient-perc-3));
-	content: "";
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	/* I usually like to add a 16px blur */
-	z-index: -1;
+  background: conic-gradient(from var(--rotation) at 67% 256px, rgb(255, 0, 204) var(--gradient-perc-1), rgb(183, 93, 100) var(--gradient-perc-2), rgb(127, 20, 127) var(--gradient-perc-3));
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* I usually like to add a 16px blur */
+  z-index: -1;
 }
 
 main {
-	background-color: #000000;
-	border: 2px solid #333;
-	border-radius: 5px;
-	margin: auto;
-	max-width: 1200px;
-	padding: 0 20px;
-	width: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .chip-row {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.2em;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  width: 100%;
 }
-
 .chip-row .right {
-	display: inherit;
-	gap: 0.2em;
-	margin-left: auto;
+  display: inherit;
+  gap: 0.2em;
+  margin-left: auto;
 }
 
 .chip {
-	background-color: #333;
-	border: 1px solid rgba(255, 255, 255, 0.11);
-	border-radius: 5em;
-	color: white;
-	cursor: pointer;
-	font-size: 14px;
-	max-width: 256px;
-	padding: 5px 10px;
-	text-decoration: none;
-	transition: background-color 0.2s ease-in-out;
-	user-select: none;
+  background-color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 5em;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  max-width: 256px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
 }
-
 .chip.active {
-	background-color: #3442d2;
+  background-color: #3442d2;
 }
-
 .chip:hover {
-	background-color: #3442d2;
+  background-color: #3442d2;
 }
 
 .view {
-	display: flex;
-	padding-bottom: 1em;
-	transition: 0.2s ease-in-out;
+  display: flex;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
 }
-
 .view.list {
-	flex-direction: column;
-	flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
 .view.list > :first-child {
-	border-radius: 1em 1em 0 0;
+  border-radius: 1em 1em 0 0;
 }
-
 .view.list > :last-child {
-	border-radius: 0 0 1em 1em;
+  border-radius: 0 0 1em 1em;
 }
-
 .view.list > *:not(:first-child):not(:last-child) {
-	border: 1px solid rgba(255, 255, 255, 0.04);
-	border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 0;
 }
-
 .view.grid {
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 0.2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2em;
 }
-
 .view.grid .card {
-	flex: 1;
-	min-width: 356px;
+  flex: 1;
+  min-width: 356px;
 }
-
 .view .card {
-	background-color: #333;
-	filter: brightness(0.8);
-	padding: 1em;
-	transition: 0.2s ease-in-out;
+  background-color: #333;
+  filter: brightness(0.8);
+  padding: 1em;
+  transition: 0.2s ease-in-out;
 }
-
 .view .card:hover {
-	filter: brightness(1);
+  filter: brightness(1);
 }
 
 .profile {
-	background-color: #333;
-	border-radius: 1em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 0.2em;
-	margin: 1em 0;
-	padding: 1em;
-	transition: 0.2s ease-in-out;
+  background-color: #333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin: 1em 0;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
 }
-
 .profile:hover {
-	background-color: #3442d2;
+  background-color: #3442d2;
 }
-
 .profile .profile-pic {
-	border-radius: 1em;
-	height: 128px;
-	margin-right: 1em;
-	width: 128px;
+  border-radius: 1em;
+  height: 128px;
+  margin-right: 1em;
+  width: 128px;
 }
-
 .profile .profile-text {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 .profile .profile-text > * {
   margin: 0;

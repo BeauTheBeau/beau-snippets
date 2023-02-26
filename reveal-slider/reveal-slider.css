@@ -1,0 +1,40 @@
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.side .last-word {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+* {
+    color: inherit;
+}
+
+.side:nth-child(1) {
+    width: 50%;
+    background: #c9ff05;
+    z-index: 2;
+}
+
+.side:nth-child(1) h1 {
+    color: black;
+}
+
+.side:nth-child(2) {
+    background: linear-gradient(to right, #ff00ff, #0000ff);
+}
+
+.side h1 {
+    font-size: 8vw;
+    color: white;
+    margin: 0px 10vw;
+    width: 80vw;
+}
+
+/*# sourceMappingURL=reveal-slider.css.map */
